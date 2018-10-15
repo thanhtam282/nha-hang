@@ -23,8 +23,8 @@ log.txt
 .sass-cache/
 .versions/
 tmp/
-temp/
-dist/
+#temp/
+#dist/
 www/
 wwwroot/
 
