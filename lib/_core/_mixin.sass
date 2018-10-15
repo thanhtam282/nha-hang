@@ -1,0 +1,38 @@
+// // Set Link Hover
+=link ($link, $hover:$link, $active:$link, $visit:$link)
+	color: #{$link}
+	&:visited
+		color: #{$visit}
+	&:hover
+		color: #{$hover}
+	&:active, &:focus , &.active, &.activated
+		color: #{$active}
+
+// Set bg hover
+=bg ($link, $hover:$link, $active:$link)
+	@if $link != "none"
+		background-color: #{$link}
+		&:hover
+			background-color: #{$hover}
+		&:active, &:focus , &.active, &.activated
+			background-color: #{$active}
+	@else
+		background: none
+		&:hover
+			background-color: #{$hover}
+		&:active, &:focus , &.active, &.activated
+			background-color: #{$active}
+
+=center($direct: row)
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	flex-direction: $direct
+
+@function r($px_value)
+	@return (($px_value / 14px) * 100) / 100 * 1rem 
+
+@font-face 
+	font-family: head-font
+	src: url(../fonts/Angeline-Vintage_Demo.ttf)

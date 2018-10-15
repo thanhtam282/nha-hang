@@ -1,0 +1,158 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-testimonials-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.bg-img
+		margin-top: -3rem
+		+media-breakpoint-up(md)
+			margin-top: -5rem
+		padding: 0 3rem
+		h2
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: r(92px)
+			font-size: 1rem
+			+media-breakpoint-up(md)
+				font-size: 2rem
+				top: -3rem
+			+media-breakpoint-up(lg)
+				font-size: 2rem
+				top: -3rem
+		p
+			color: #afafaf
+			position: absolute
+			top: 12%
+			width: 6.5rem
+			left: 56%
+			font-size: r(8px)
+			+media-breakpoint-up(md)
+				font-size: r(14px)
+				width: 18rem
+				top: 24%
+				left: 59%
+			+media-breakpoint-up(lg)
+				font-size: r(14px)
+				width: 18rem
+				top: 24%
+				left: 57%
+
+		button
+			position: absolute
+			left: 52%
+			transform: translateX(-50%)
+			top: 70%
+			background: #000
+			color: #fff
+			border-radius: 0
+			width: 8rem
+			height: 1.2rem
+			font-size: r(7px)
+			padding: 0
+			+media-breakpoint-up(md)
+				font-size: r(14px)
+				left: 69%
+				top: 61%
+				height: 3rem
+				width: 16rem
+			+media-breakpoint-up(lg)
+				font-size: r(14px)
+				left: 71%
+				top: 61%
+				height: 3rem
+				width: 14rem
+	.testimonial-slider
+		.item
+			text-align: center
+			width: 100%
+			margin: 0
+			+media-breakpoint-up(md)
+				margin-bottom: 4rem
+			//padding: 3rem
+			img
+				//max-width: 90px
+				display: inline-block
+				//border: 1px solid darken(color-get($mau,trang),5%)
+				box-shadow: 5px 6px 8px 2px #00000061
+				transform: scale(.85)
+			figcaption
+				position: absolute
+				margin: 0 auto
+				top: 0	
+				height: 100%
+				width: 100%
+				h4
+					position: absolute
+					bottom: 2rem
+					left: 50%
+					transform: translateX(-50%)
+					font-size: 1rem
+					+media-breakpoint-up(md)
+						bottom: 6rem
+				.price
+					position: absolute
+					margin-top: 2rem
+					right: 2rem
+					font-size: 1rem
+					//position: absolute
+				+media-breakpoint-up(lg)
+					max-width: 600px
+					h4
+						bottom: 8rem
+						font-size: 1.7rem
+					.price
+						margin-top: 4rem
+						right: 5rem
+						font-size: 1.3rem
+						//position: absolute
+
+	.owl-carousel
+		position: relative
+		// Main
+		.owl-stage-outer
+			.owl-stage
+				display: flex
+			.owl-item
+				display: flex
+				margin-top: 1rem
+		// Nav
+		.owl-nav
+			text-align: center
+			margin-top: .7rem
+			button
+				padding: 0 0.5rem
+				background-color: rgba(0,0,0,0)
+				border: 1px solid #000
+				height: 1.5rem
+				+mar(.5rem)
+				width: 4rem
+				+media-breakpoint-up(md)
+					&.owl-prev, &.owl-next
+						+pad(.5rem)
+						width: 3rem
+						text-align: center
+						position: absolute
+						height: 2.5rem
+						top: 50%
+						transform: translateY(-50%)
+						width: 4rem
+						&:focus
+							outline: none
+					&.owl-prev
+						left: -4rem
+					&.owl-next
+						right: -4rem
+
+					&:hover, &.active
+						&.owl-prev, &.owl-next
+							background: color-get($mau,den)
+							color: color-get($mau,trang)
+					&.disabled
+						+opacity(.5)
+
+
