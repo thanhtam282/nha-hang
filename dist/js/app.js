@@ -38,6 +38,7 @@ $(document).ready(function () {
 		backToTop();
 	}
 });
+
 function CanhCamResponsive() {
 	// Set BG Mask
 	$('[bg-mask]').each(function () {

@@ -10050,6 +10050,11 @@ html, body {
   src: url(../fonts/Angeline-Vintage_Demo.ttf);
 }
 
+@font-face {
+  font-family: time-font;
+  src: url(../fonts/Times-New-Roman.ttf);
+}
+
 html, body {
   font-family: 'Montserrat', Roboto, 'Roboto Condensed', sans-serif;
   font-size: 14px;
@@ -10418,6 +10423,11 @@ header.fixedheader {
   src: url(../fonts/Angeline-Vintage_Demo.ttf);
 }
 
+@font-face {
+  font-family: time-font;
+  src: url(../fonts/Times-New-Roman.ttf);
+}
+
 .canhcam-header-4 {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -10496,6 +10506,11 @@ header.fixedheader {
   src: url(../fonts/Angeline-Vintage_Demo.ttf);
 }
 
+@font-face {
+  font-family: time-font;
+  src: url(../fonts/Times-New-Roman.ttf);
+}
+
 .canhcam-boxes-2 {
   margin-top: -3.7142857143rem;
   padding-top: 2rem;
@@ -10559,6 +10574,12 @@ header.fixedheader {
   }
 }
 
+@media (min-width: 1200px) {
+  .canhcam-boxes-2 .title h1 {
+    color: red;
+  }
+}
+
 .canhcam-boxes-2 .title p {
   font-size: 1.5rem;
   color: #ffffff;
@@ -10616,6 +10637,12 @@ header.fixedheader {
 @media (min-width: 768px) {
   .reser .bg-img img {
     max-width: 120%;
+  }
+}
+
+@media (min-width: 992px) {
+  .reser .bg-img img {
+    max-width: 100%;
   }
 }
 
@@ -10679,12 +10706,18 @@ header.fixedheader {
 }
 
 .reser .intro .first {
-  padding: 3rem 1rem 2rem 3.5rem;
+  padding: 2rem 1rem 0rem 3.5rem;
 }
 
 @media (min-width: 768px) {
   .reser .intro .first {
     padding: 7rem 2rem 0rem 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .reser .intro .first {
+    padding: 13rem 4rem 0rem 8.5rem;
   }
 }
 
@@ -10702,15 +10735,22 @@ header.fixedheader {
   }
 }
 
+@media (min-width: 992px) {
+  .reser .intro .first .title h3 {
+    margin-top: 3rem;
+  }
+}
+
 .reser .intro .first .title h4 {
   color: #afafaf;
   margin-top: 2rem;
 }
 
 .reser .intro .first .title p {
+  font-family: 'time-font';
   font-weight: normal;
   color: #afafaf;
-  width: 80%;
+  width: 83%;
   font-size: .6rem;
 }
 
@@ -10721,9 +10761,25 @@ header.fixedheader {
   }
 }
 
+@media (min-width: 992px) {
+  .reser .intro .first .title p {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    width: auto;
+    padding: 0 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .reser .intro .bg-1 {
+    padding: 8rem 4rem 0rem 8.5rem;
+  }
+}
+
 .reser .intro .second {
-  padding: 2rem 3rem 4rem 1rem;
-  margin-bottom: 1.1rem;
+  padding: 2rem 3rem 1rem 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -10734,7 +10790,7 @@ header.fixedheader {
 
 @media (min-width: 992px) {
   .reser .intro .second {
-    padding: 9rem 1rem 1rem 3rem;
+    padding: 7rem 6rem 1rem 4rem;
   }
 }
 
@@ -10745,6 +10801,7 @@ header.fixedheader {
 }
 
 .reser .intro .second .title p {
+  font-family: 'time-font';
   font-weight: normal;
   color: #afafaf;
   width: 80%;
@@ -10755,6 +10812,12 @@ header.fixedheader {
   .reser .intro .second .title p {
     font-size: 1rem;
     margin-top: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .reser .intro .second .title p {
+    font-size: 1.2rem;
   }
 }
 
@@ -10772,6 +10835,7 @@ header.fixedheader {
 @media (min-width: 768px) {
   .reser .intro .second .title .btn {
     margin-bottom: 3rem;
+    margin-top: 2rem;
     width: 15rem;
     height: 3rem;
     font-size: 1rem;
@@ -10782,8 +10846,16 @@ header.fixedheader {
   }
 }
 
+@media (min-width: 992px) {
+  .reser .intro .second .title .btn {
+    margin-bottom: 3.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
 .reser .intro .bg-2 {
-  padding: 0rem 3rem 4rem 1rem;
+  padding: 2rem 3rem 1rem 1rem;
+  margin-top: -2rem;
 }
 
 .reser .intro .bg-2 .title {
@@ -10811,19 +10883,26 @@ header.fixedheader {
 
 @media (min-width: 768px) {
   .reser .intro .bg-2 {
-    margin-bottom: 5.5rem;
+    padding: 4.5rem 1rem 1rem 2rem;
+    margin-bottom: 9.5rem;
   }
 }
 
 @media (min-width: 992px) {
   .reser .intro .bg-2 {
-    margin-bottom: 9rem;
+    padding: 5.5rem 6rem 7rem 4rem;
+    margin-bottom: 2rem;
   }
 }
 
 @font-face {
   font-family: head-font;
   src: url(../fonts/Angeline-Vintage_Demo.ttf);
+}
+
+@font-face {
+  font-family: time-font;
+  src: url(../fonts/Times-New-Roman.ttf);
 }
 
 .canhcam-testimonials-1 {
@@ -10872,11 +10951,12 @@ header.fixedheader {
 @media (min-width: 992px) {
   .canhcam-testimonials-1 .bg-img h2 {
     font-size: 2rem;
-    top: -3rem;
+    top: 0rem;
   }
 }
 
 .canhcam-testimonials-1 .bg-img p {
+  font-family: 'time-font';
   color: #afafaf;
   position: absolute;
   top: 12%;
@@ -10890,16 +10970,16 @@ header.fixedheader {
     font-size: 1rem;
     width: 18rem;
     top: 24%;
-    left: 59%;
+    left: 57%;
   }
 }
 
 @media (min-width: 992px) {
   .canhcam-testimonials-1 .bg-img p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 18rem;
     top: 24%;
-    left: 57%;
+    left: 71%;
   }
 }
 
@@ -10921,10 +11001,10 @@ header.fixedheader {
 @media (min-width: 768px) {
   .canhcam-testimonials-1 .bg-img button {
     font-size: 1rem;
-    left: 69%;
+    left: 71%;
     top: 61%;
     height: 3rem;
-    width: 16rem;
+    width: 14rem;
   }
 }
 
@@ -11078,6 +11158,11 @@ header.fixedheader {
   src: url(../fonts/Angeline-Vintage_Demo.ttf);
 }
 
+@font-face {
+  font-family: time-font;
+  src: url(../fonts/Times-New-Roman.ttf);
+}
+
 .canhcam-banner-1 .slick-slider {
   position: relative;
   margin-bottom: 0;
@@ -11166,7 +11251,14 @@ header.fixedheader {
     padding-right: 1rem;
     padding-bottom: 0;
     padding-left: 1rem;
-    margin: 0 22rem;
+    margin: 0 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .canhcam-banner-1 .slick-slider .slick-track .item .title {
+    margin: 0 13rem;
+    height: 25rem;
   }
 }
 
@@ -11186,11 +11278,13 @@ header.fixedheader {
 
 @media (min-width: 992px) {
   .canhcam-banner-1 .slick-slider .slick-track .item .title h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
   }
 }
 
 .canhcam-banner-1 .slick-slider .slick-track .item .title p {
+  font-family: 'time-font';
   color: #000000;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
@@ -11203,6 +11297,12 @@ header.fixedheader {
     font-size: 1.2rem;
     max-width: 90%;
     margin: 1rem auto 3rem auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .canhcam-banner-1 .slick-slider .slick-track .item .title p {
+    font-size: 2rem;
   }
 }
 
@@ -11315,6 +11415,11 @@ header.fixedheader {
   src: url(../fonts/Angeline-Vintage_Demo.ttf);
 }
 
+@font-face {
+  font-family: time-font;
+  src: url(../fonts/Times-New-Roman.ttf);
+}
+
 .canhcam-footer-3 {
   min-height: 400px;
   position: relative;
@@ -11329,36 +11434,39 @@ header.fixedheader {
   }
 }
 
+@media (min-width: 768px) {
+  .canhcam-footer-3 .row {
+    padding: 0 2rem;
+    margin-top: 5rem;
+  }
+}
+
 .canhcam-footer-3 h4 {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  font-family: 'fantasy';
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
-.canhcam-footer-3 h4:after {
-  width: 40px;
-  height: 1px;
-  background: #2e3192;
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -khtml-transform: translateX(-50%);
-  transform: translateX(-50%);
+@media (min-width: 992px) {
+  .canhcam-footer-3 h4 {
+    margin-bottom: 2.5rem;
+  }
 }
 
-@media (min-width: 768px) {
-  .canhcam-footer-3 h4:after {
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    -webkit-transform: translateX(0);
-    -khtml-transform: translateX(0);
-    transform: translateX(0);
+@media (max-width: 991.98px) {
+  .canhcam-footer-3 .spec {
+    margin-top: 1rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .canhcam-footer-3 .spec {
+    font-size: 1.5rem;
   }
 }
 
@@ -11367,6 +11475,8 @@ header.fixedheader {
 }
 
 .canhcam-footer-3 .linkfooter .list-group .list-group-item {
+  font-weight: lighter;
+  letter-spacing: 1px;
   background: none;
   border: 0;
   padding-top: 0.5rem;
@@ -11394,25 +11504,31 @@ header.fixedheader {
   }
 }
 
-.canhcam-footer-3 .linkfooter .list-group .list-group-item a {
-  font-size: .9rem;
-  color: #d9d9d9;
+@media (min-width: 992px) {
+  .canhcam-footer-3 .linkfooter .list-group .list-group-item {
+    padding-bottom: .8rem;
+  }
 }
 
-.canhcam-footer-3 .linkfooter .list-group .list-group-item a:visited {
-  color: #d9d9d9;
+.canhcam-footer-3 .linkfooter .list-group .list-group-item a {
+  color: #d9d9d973;
+  font-size: .9rem;
 }
 
 .canhcam-footer-3 .linkfooter .list-group .list-group-item a:hover {
-  color: #2e3192;
-}
-
-.canhcam-footer-3 .linkfooter .list-group .list-group-item a:active, .canhcam-footer-3 .linkfooter .list-group .list-group-item a:focus, .canhcam-footer-3 .linkfooter .list-group .list-group-item a.active, .canhcam-footer-3 .linkfooter .list-group .list-group-item a.activated {
-  color: #2e3192;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .canhcam-footer-3 .linkfooter .subscribe .input-group2 {
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  .canhcam-footer-3 .linkfooter .subscribe .input-group2 {
+    margin-top: -1rem;
+  }
 }
 
 .canhcam-footer-3 .linkfooter .subscribe .input-group2 ::-webkit-input-placeholder {
@@ -11436,9 +11552,14 @@ header.fixedheader {
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
+  opacity: .7;
+  height: 3rem;
 }
 
 .canhcam-footer-3 .linkfooter .subscribe button {
   margin-top: 1rem;
   margin-left: 1rem;
+  background: #f1ac11;
+  border: none;
+  border-radius: 0;
 }
