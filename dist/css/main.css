@@ -10609,7 +10609,6 @@ header.fixedheader {
   .canhcam-boxes-2 .title h1 {
     margin-top: -5rem;
     font-size: 21rem;
-    color: #afafaf;
   }
 }
 
@@ -10617,20 +10616,12 @@ header.fixedheader {
   .canhcam-boxes-2 .title h1 {
     margin-top: -13rem;
     font-size: 32rem;
-    color: black;
   }
 }
 
 @media (min-width: 992px) {
   .canhcam-boxes-2 .title h1 {
-    color: yellow;
     font-size: 35rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .canhcam-boxes-2 .title h1 {
-    color: red;
   }
 }
 
