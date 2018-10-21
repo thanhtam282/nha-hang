@@ -32,6 +32,7 @@
             "bower_components/fancybox/dist/jquery.fancybox.min.css"
         ],
         "js": [
+			"node_modules/aos/dist/aos.js",
             "bower_components/owl.carousel/dist/owl.carousel.min.js",
             "bower_components/k-gmaps/dist/js/kmaps.js",
             "bower_components/bootstrap-validator/dist/validator.min.js",
@@ -46,7 +47,8 @@
             "bower_components/freewall/freewall.js"
         ],
         "css": [
-            "bower_components/select2/dist/css/select2.min.css",
+			"node_modules/aos/dist/aos.css",
+			"bower_components/select2/dist/css/select2.min.css",
             "bower_components/lightgallery/dist/css/lightgallery.min.css",
             "bower_components/lightgallery/dist/css/lg-transitions.min.css",
             "node_modules/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css",

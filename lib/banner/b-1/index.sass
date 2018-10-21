@@ -27,41 +27,62 @@
 					+pos(abs, null null auto 0)
 					background: #fff
 					text-align: center
+					+media-breakpoint-up(sm)
+						margin: 0 9rem
 					+media-breakpoint-up(md)
 						padding: 0 5rem
 						+pad(0 1rem)
-						margin: 0 15rem
+						margin: 0 11rem
 						//height: 26rem
 					+media-breakpoint-up(lg)
 						margin: 0 13rem
 						height: 25rem
+					+media-breakpoint-up(xl)
+						margin: 0 25rem
 					h1
+						font-family: "title-font"
 						margin-top: 1rem
 						font-size: 1.5rem
 						color: color-get($mau,den)
 						+text-sha(1px 1px 3px rgba(0,0,0,.4))
+						+media-breakpoint-up(sm)
+							font-size: 2.5rem
+							margin-bottom: 2rem
+							margin-top: 1rem
+							letter-spacing: 1px
 						+media-breakpoint-up(md)
 							margin-top: 3rem
 							font-size: 2rem
+							letter-spacing: 2px
 						+media-breakpoint-up(lg)
 							font-size: 3.5rem
 							margin-bottom: 2rem
+							letter-spacing: 3px
+						+media-breakpoint-up(xl)
+							margin-bottom: 4rem
+							letter-spacing: 4px
 					p
 						font-family: 'time-font'
 						color: color-get($mau,den)
 						+text-sha(2px 2px 3px rgba(0,0,0,.2))
-						+fz(1rem)
-						+lh(1.8rem)
+						+fz(1.2rem)
+						//+lh(1.8rem)
 						+fw(300)
+						+media-breakpoint-up(sm)
+							+fz(1.5rem)
 						+media-breakpoint-up(md)
-							+fz(1.2rem)
+							+fz(1.5rem)
 							max-width: 90%
-							margin: 1rem auto 3rem auto
+							//margin: 1rem auto 3rem auto
 						+media-breakpoint-up(lg)
 							font-size: 2rem
 		// Arrow
 		.slick-arrow
 			opacity: 0
+			&.slick-prev
+				left: 0
+			&.slick-next
+				right: 0
 			+media-breakpoint-up(md)
 				opacity: 1
 				background: rgba(0,0,0,0)
@@ -95,7 +116,7 @@
 		.slick-dots
 			+pos(abs, 1.25rem null auto 0)
 			+media-breakpoint-up(md)
-				+pos(abs, 2rem null auto 0)
+				+pos(abs, 1rem null auto 0)
 			width: 100%
 			li
 				width: .75rem

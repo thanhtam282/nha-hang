@@ -7,66 +7,140 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
-	.bg-img
+	.bg
 		margin-top: -3rem
+		//padding: 0 1.25rem
 		+media-breakpoint-up(md)
-			margin-top: -5rem
-		padding: 0 3rem
-		h2
-			position: absolute
-			left: 50%
-			transform: translateX(-50%)
-			bottom: r(92px)
-			font-size: 1rem
+			margin-top: -3rem
+	.row.inside
+		width: 95%
+		position: absolute
+		&.head
+			top: 18%
+			margin-top: -3rem
 			+media-breakpoint-up(md)
-				font-size: 2rem
-				top: -3rem
-			+media-breakpoint-up(lg)
-				font-size: 2rem
-				top: 0rem
-		p
-			font-family: 'time-font'
-			color: #afafaf
-			position: absolute
-			top: 12%
-			width: 6.5rem
-			left: 56%
-			font-size: r(8px)
+				top: 11%
+			h2
+				font-family: "spec-title-font"
+				font-size: 1rem
+				+media-breakpoint-up(sm)
+					font-size: 2rem
+				+media-breakpoint-up(lg)
+					font-size: 2rem
+		&.body
+			top: 20%
 			+media-breakpoint-up(md)
-				font-size: r(14px)
-				width: 18rem
-				top: 24%
-				left: 57%
+				margin-left: .5rem
 			+media-breakpoint-up(lg)
-				font-size: 1.5rem
-				width: 18rem
-				top: 24%
-				left: 71%
+				top: 29%
+				margin-left: 1rem
+			p
+				font-family: 'time-font'
+				color: #afafaf
+				//top: 12%
+				bottom: 2rem
+				width: 10.3rem
+				font-size: .8rem
+				margin-left: .5rem
+				+media-breakpoint-up(sm)
+					margin-left: 1.5rem
+					font-size: 1.2rem
+					width: 15.3rem
+				+media-breakpoint-up(md)
+					font-size: 1.2rem
+					width: 18rem
+				+media-breakpoint-up(lg)
+					font-size: 1.5rem
+					width: 26rem
+		&.but
+			bottom: 1rem
+			+media-breakpoint-up(sm)
+				bottom: 2rem
+				margin-left: 1.5rem
+			+media-breakpoint-up(md)
+				top: 60%
+			+media-breakpoint-up(lg)
+				top: 64%
+				margin-left: 1rem
+			button
+				font-family: "button-font"
+				background: #000
+				color: #fff
+				border-radius: 0
+				width: 8rem
+				height: 1.5rem
+				font-size: .7rem
+				padding: 0
+				+media-breakpoint-up(sm)
+					font-size: 1.2rem
+					height: 2rem
+					width: 15rem
+				+media-breakpoint-up(md)
+					font-size: 1.2rem
+					height: 3rem
+					width: 14rem
+				+media-breakpoint-up(lg)
+					font-size: 1.2rem
+					margin-left: 1.5rem
+					letter-spacing: 2px
+					height: 3rem
+					width: 15rem
+	// h2
+	// 	position: absolute
+	// 	left: 50%
+	// 	transform: translateX(-50%)
+	// 	bottom: r(92px)
+	// 	font-size: 1rem
+	// 	+media-breakpoint-up(md)
+	// 		font-size: 2rem
+	// 		top: -3rem
+	// 	+media-breakpoint-up(lg)
+	// 		font-size: 2rem
+	// 		top: 0rem
+	// p
+	// 	font-family: 'time-font'
+	// 	color: #afafaf
+	// 	position: absolute
+	// 	//top: 12%
+	// 	bottom: 2rem
+	// 	width: 6.5rem
+	// 	left: 56%
+	// 	font-size: r(8px)
+	// 	+media-breakpoint-up(md)
+	// 		font-size: r(14px)
+	// 		width: 18rem
+	// 		top: 24%
+	// 		left: 57%
+	// 	+media-breakpoint-up(lg)
+	// 		font-size: 1.5rem
+	// 		width: 18rem
+	// 		top: 24%
+	// 		left: 71%
 
-		button
-			position: absolute
-			left: 52%
-			transform: translateX(-50%)
-			top: 70%
-			background: #000
-			color: #fff
-			border-radius: 0
-			width: 8rem
-			height: 1.2rem
-			font-size: r(7px)
-			padding: 0
-			+media-breakpoint-up(md)
-				font-size: r(14px)
-				left: 71%
-				top: 61%
-				height: 3rem
-				width: 14rem
-			+media-breakpoint-up(lg)
-				font-size: r(14px)
-				left: 71%
-				top: 61%
-				height: 3rem
-				width: 14rem
+	// button
+	// 	position: absolute
+	// 	left: 52%
+	// 	transform: translateX(-50%)
+	// 	bottom: 1rem
+	// 	background: #000
+	// 	color: #fff
+	// 	border-radius: 0
+	// 	width: 8rem
+	// 	height: 1.2rem
+	// 	font-size: r(7px)
+	// 	padding: 0
+	// 	+media-breakpoint-up(md)
+	// 		font-size: r(14px)
+	// 		left: 71%
+	// 		top: 61%
+	// 		height: 3rem
+	// 		width: 14rem
+	// 	+media-breakpoint-up(lg)
+	// 		font-size: r(14px)
+	// 		left: 71%
+	// 		top: 61%
+	// 		height: 3rem
+	// 		width: 14rem
 	.testimonial-slider
 		.item
 			text-align: center
@@ -93,6 +167,7 @@
 					left: 50%
 					transform: translateX(-50%)
 					font-size: 1rem
+					font-family: "spec-title-font"
 					+media-breakpoint-up(md)
 						bottom: 6rem
 				.price
@@ -100,7 +175,28 @@
 					margin-top: 2rem
 					right: 2rem
 					font-size: 1rem
+					font-family: "spec-title-font"
 					//position: absolute
+				+media-breakpoint-up(sm)
+					//max-width: 600px
+					h4
+						bottom: 3rem
+						font-size: 1.5rem
+					.price
+						margin-top: 3rem
+						right: 6rem
+						font-size: 1.2rem
+						//position: absolute
+				+media-breakpoint-up(md)
+					//max-width: 600px
+					h4
+						bottom: 7rem
+						font-size: 1.4rem
+					.price
+						margin-top: 3rem
+						right: 6rem
+						font-size: 1.2rem
+						//position: absolute
 				+media-breakpoint-up(lg)
 					max-width: 600px
 					h4

@@ -33,6 +33,7 @@
 	.spec
 		//margin-top: 3rem !important
 		//margin-bottom: 0
+		font-family: "spec-title-font"
 		+media-breakpoint-down(md)
 			margin-top: 1rem !important
 		+media-breakpoint-up(lg)
@@ -56,13 +57,15 @@
 				+media-breakpoint-up(lg)
 					padding-bottom: .8rem
 				a
-					color: #d9d9d973
+					color: white
 					font-size: .9rem
 					//+link(#d9d9d973,color-get($mau,trang),color-get($mau,trang))
-					&:hover,
-						color: white
-						text-decoration: none
-						font-weight: bold
+					+media-breakpoint-up(md)
+						color: #d9d9d973
+						&:hover,
+							color: white
+							text-decoration: none
+							font-weight: bold
 		.subscribe
 			.input-group2
 				+media-breakpoint-up(lg)

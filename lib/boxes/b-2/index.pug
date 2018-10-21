@@ -3,7 +3,7 @@ section.canhcam-boxes-2(bg-img="./img/bg/header.png")
 		.row
 			.col.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2
 				.title
-					h1 Sam's
+					h1 Sams
 					p Food. First & Foremost
 					a.btn.btn-lg(href="#") ABOUT US
 section.reser(bg-img="./img/bg/behind.jpg")
@@ -15,11 +15,51 @@ section.reser(bg-img="./img/bg/behind.jpg")
 					img.img-fluid(src="./img/bg/frame1.png", alt="")
 					a(href="#")
 						button.btn CHECK AVAILABILITY 
-				//- 	input#datepicker(type="text", placeholder="PostCode")
+					//- input#datepicker(type="text", placeholder="PostCode")
 
-				//- 	legend.time
-				//- 		label(for="start") 
-				//- 		input#start(type="time" name="trip" value="10:00" min="00:00" max="23:59")
+					//- legend.time
+					//- 	label(for="start") 
+					//- 	input#start(type="time" name="trip" value="10:00" min="00:00" max="23:59")
+				.row.option
+					.col-4
+						.custom-selecttam
+							select
+								option(value="0") DATE
+								- for(var i=1;i<32;i++)
+									option(value=i) #{i}
+									//- option(value="2") BMW
+
+						
+					.col-4
+						.custom-selecttam
+							select
+								option(value="0") TIME
+								option(value="1") 8:00
+								option(value="2") 9:00
+								option(value="3") 10:00
+								option(value="4") 11:00
+								option(value="5") 12:00
+								option(value="6") 13:00
+								option(value="7") 14:00
+								option(value="8") 15:00
+								option(value="9") 16:00
+								option(value="10") 17:00
+								option(value="11") 18:00
+								option(value="12") 19:00
+	
+					.col-4
+						.custom-selecttam
+							select
+								option(value="0") PAX
+								option(value="1") Light Meal
+								option(value="2") Dessert
+								option(value="3") Panna
+								option(value="4") Light Meal
+								option(value="5") Dessert
+								option(value="6") Panna
+								option(value="7") Light Meal
+								option(value="8") Dessert
+								option(value="9") Panna
 				//- form
 				//- 	input(list="browsers" name="browser")
 				//- 	datalist#browsers
@@ -28,20 +68,21 @@ section.reser(bg-img="./img/bg/behind.jpg")
 				//- 		option(value="Main Dish")
 				//- 		option(value="Veterian")
 
+
 		.row.intro
-			.col-6.first.bg
+			.col-12.col-sm-6.first.bg.aos-animate(data-aos="fade-up" data-aos-anchor-placement="bottom-bottom")
 				.title
 					h3 OUR CHEFS
 					//- h4 wwwwwwww
 					p
 						br
 						| Fish role dredged in flour, pan fried in butter and served with the resulting mushroom sauce, parsley and lemon
-			.col-6.second
+			.col-12.col-sm-6.second.aos-animate(data-aos="fade-up" data-aos-anchor-placement="bottom-bottom")
 				img.img-fluid(src="./img/bg/our-chef.png", alt="")
 		.row.intro
-			.col-6.first.bg-1
+			.col-12.col-sm-6.first.bg-1.aos-animate(data-aos="fade-up" data-aos-anchor-placement="bottom-bottom")
 				img.img-fluid(src="./img/bg/coffe.png", alt="")
-			.col-6.second.bg-2
+			.col-12.col-sm-6.second.bg-2.aos-animate(data-aos="fade-up" data-aos-anchor-placement="bottom-bottom")
 				.title
 					//- h4 wwwwwwwww 
 					p
