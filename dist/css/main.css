@@ -10047,12 +10047,27 @@ html, body {
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 @font-face {
   font-family: head-font;
-  src: url(../fonts/Angeline-Vintage_Demo.ttf);
+  src: url(../fonts/angeltears.ttf);
 }
 
 @font-face {
   font-family: time-font;
   src: url(../fonts/Times-New-Roman.ttf);
+}
+
+@font-face {
+  font-family: spec-title-font;
+  src: url(../fonts/greatvibes.ttf);
+}
+
+@font-face {
+  font-family: button-font;
+  src: url(../fonts/Antipasto.ttf);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(../fonts/cafeta.ttf);
 }
 
 html, body {
@@ -10420,12 +10435,27 @@ header.fixedheader {
 
 @font-face {
   font-family: head-font;
-  src: url(../fonts/Angeline-Vintage_Demo.ttf);
+  src: url(../fonts/angeltears.ttf);
 }
 
 @font-face {
   font-family: time-font;
   src: url(../fonts/Times-New-Roman.ttf);
+}
+
+@font-face {
+  font-family: spec-title-font;
+  src: url(../fonts/greatvibes.ttf);
+}
+
+@font-face {
+  font-family: button-font;
+  src: url(../fonts/Antipasto.ttf);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(../fonts/cafeta.ttf);
 }
 
 .canhcam-header-4 {
@@ -10503,12 +10533,27 @@ header.fixedheader {
 
 @font-face {
   font-family: head-font;
-  src: url(../fonts/Angeline-Vintage_Demo.ttf);
+  src: url(../fonts/angeltears.ttf);
 }
 
 @font-face {
   font-family: time-font;
   src: url(../fonts/Times-New-Roman.ttf);
+}
+
+@font-face {
+  font-family: spec-title-font;
+  src: url(../fonts/greatvibes.ttf);
+}
+
+@font-face {
+  font-family: button-font;
+  src: url(../fonts/Antipasto.ttf);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(../fonts/cafeta.ttf);
 }
 
 .canhcam-boxes-2 {
@@ -10557,12 +10602,21 @@ header.fixedheader {
   color: #ffffff;
   font-family: "head-font";
   margin-bottom: 1.5rem;
-  font-size: 9rem;
+  font-size: 15rem;
+}
+
+@media (min-width: 576px) {
+  .canhcam-boxes-2 .title h1 {
+    margin-top: -5rem;
+    font-size: 21rem;
+    color: #afafaf;
+  }
 }
 
 @media (min-width: 768px) {
   .canhcam-boxes-2 .title h1 {
-    font-size: 15rem;
+    margin-top: -13rem;
+    font-size: 32rem;
     color: black;
   }
 }
@@ -10570,7 +10624,7 @@ header.fixedheader {
 @media (min-width: 992px) {
   .canhcam-boxes-2 .title h1 {
     color: yellow;
-    font-size: 17.8571428571rem;
+    font-size: 35rem;
   }
 }
 
@@ -10581,35 +10635,194 @@ header.fixedheader {
 }
 
 .canhcam-boxes-2 .title p {
+  margin-top: 1.5rem;
   font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 50%;
+  margin-left: 4.5rem;
+  white-space: nowrap;
   color: #ffffff;
-  -webkit-transform: translateX(19%);
-  transform: translateX(19%);
   font-weight: lighter;
+  font-family: "title-font";
+}
+
+@media (min-width: 576px) {
+  .canhcam-boxes-2 .title p {
+    margin-top: 1.5rem;
+    font-size: 2.1rem;
+    margin-left: 6.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .canhcam-boxes-2 .title p {
-    font-size: 2.57rem;
+    margin-top: 0;
+    margin-left: 10rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .canhcam-boxes-2 .title p {
+    margin-left: 12rem;
   }
 }
 
 .canhcam-boxes-2 .title .btn-lg {
-  margin-top: 1rem;
-  font-size: 1rem;
+  border-radius: 0;
+  letter-spacing: 2px;
+  margin-top: 6rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   border: 2px solid #fff;
   color: #ffffff;
   width: 8rem;
+  font-family: "button-font";
+}
+
+@media (min-width: 576px) {
+  .canhcam-boxes-2 .title .btn-lg {
+    margin-top: 7rem;
+  }
 }
 
 @media (min-width: 768px) {
   .canhcam-boxes-2 .title .btn-lg {
     padding: 1rem;
     height: 4rem;
-    margin-top: 3rem;
+    margin-top: 9rem;
     width: 15.9285714286rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
+}
+
+.option {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5rem;
+  /*style the arrow inside the select element:*/
+  /*point the arrow upwards when the select box is open (active):*/
+  /*style the items (options), including the selected item:*/
+  /*style items (options):*/
+  /*hide the items when the select box is closed:*/
+}
+
+@media (min-width: 576px) {
+  .option {
+    left: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .option {
+    left: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .option {
+    left: 16rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .option {
+    left: 23rem;
+  }
+}
+
+.option input {
+  width: 100%;
+  margin-top: .5rem;
+}
+
+.option input:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+  top: 7px;
+}
+
+.option .custom-selecttam {
+  position: relative;
+  font-family: Arial;
+  width: 7.1428571429rem;
+}
+
+@media (min-width: 768px) {
+  .option .custom-selecttam {
+    width: 10.7142857143rem;
+  }
+}
+
+.option .custom-selecttam select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.option .select-selected {
+  background-color: white;
+}
+
+.option .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+.option .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #afafaf transparent;
+  top: 7px;
+}
+
+.option .select-items div, .option .select-selected {
+  color: #000;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  padding: 8px 3px;
+}
+
+@media (min-width: 768px) {
+  .option .select-items div, .option .select-selected {
+    padding: 8px 16px;
+  }
+}
+
+.option .select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.option .select-hide {
+  display: none;
+}
+
+.option .select-items div:hover, .option .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .reser .bg-img {
@@ -10634,10 +10847,8 @@ header.fixedheader {
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
-  .reser .bg-img img {
-    max-width: 120%;
-  }
+.reser .bg-img img {
+  max-width: 120%;
 }
 
 @media (min-width: 992px) {
@@ -10653,6 +10864,14 @@ header.fixedheader {
   transform: translateX(-50%);
   font-size: 1.3rem;
   top: -1.2857142857rem;
+  font-family: "title-font";
+}
+
+@media (min-width: 576px) {
+  .reser .bg-img h2 {
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -10662,7 +10881,15 @@ header.fixedheader {
   }
 }
 
+@media (min-width: 992px) {
+  .reser .bg-img h2 {
+    border-left-style: 11px;
+    font-size: 3rem;
+  }
+}
+
 .reser .bg-img button {
+  letter-spacing: 2px;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -10672,6 +10899,14 @@ header.fixedheader {
   color: #fff;
   border-radius: 0;
   font-size: .6rem;
+  font-family: "button-font";
+}
+
+@media (min-width: 576px) {
+  .reser .bg-img button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.25rem 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -10679,6 +10914,13 @@ header.fixedheader {
     font-size: 1rem;
     bottom: 4.5rem;
     margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .reser .bg-img button {
+    font-size: 1.5rem;
+    bottom: 2.5rem;
   }
 }
 
@@ -10706,7 +10948,7 @@ header.fixedheader {
 }
 
 .reser .intro .first {
-  padding: 2rem 1rem 0rem 3.5rem;
+  padding: 2rem 1.5rem 0rem 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -10723,10 +10965,10 @@ header.fixedheader {
 
 .reser .intro .first .title h3 {
   font-weight: 300;
-  font-size: 1rem;
-  margin-top: 1rem;
-  letter-spacing: 2px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  letter-spacing: 3px;
+  font-family: "title-font";
 }
 
 @media (min-width: 768px) {
@@ -10751,19 +10993,20 @@ header.fixedheader {
   font-weight: normal;
   color: #afafaf;
   width: 83%;
-  font-size: .6rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .reser .intro .first .title p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 1.2rem;
   }
 }
 
 @media (min-width: 992px) {
   .reser .intro .first .title p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 1.2rem;
     width: auto;
     padding: 0 2.5rem;
@@ -10778,8 +11021,7 @@ header.fixedheader {
 }
 
 .reser .intro .second {
-  padding: 2rem 3rem 1rem 1rem;
-  margin-bottom: 1rem;
+  padding: 2rem 1.5rem 0rem 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -10797,7 +11039,7 @@ header.fixedheader {
 .reser .intro .second .title h4 {
   color: #afafaf;
   letter-spacing: .25rem;
-  font-family: 'Roboto Condensed';
+  font-family: "title-font";
 }
 
 .reser .intro .second .title p {
@@ -10805,31 +11047,34 @@ header.fixedheader {
   font-weight: normal;
   color: #afafaf;
   width: 80%;
-  font-size: .6rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .reser .intro .second .title p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 1.2rem;
   }
 }
 
 @media (min-width: 992px) {
   .reser .intro .second .title p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
 .reser .intro .second .title .btn {
+  letter-spacing: 2px;
   background: #000;
   color: white;
   -webkit-transition: .5s all ease-in-out;
   transition: .5s all ease-in-out;
-  width: 5rem;
+  width: 10rem;
   border-radius: 0;
-  font-size: .5rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  font-family: "button-font";
 }
 
 @media (min-width: 768px) {
@@ -10854,8 +11099,19 @@ header.fixedheader {
 }
 
 .reser .intro .bg-2 {
-  padding: 2rem 3rem 1rem 1rem;
-  margin-top: -2rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .reser .intro .bg-2 {
+    margin-top: -5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .reser .intro .bg-2 {
+    margin-top: -4rem;
+  }
 }
 
 .reser .intro .bg-2 .title {
@@ -10897,12 +11153,27 @@ header.fixedheader {
 
 @font-face {
   font-family: head-font;
-  src: url(../fonts/Angeline-Vintage_Demo.ttf);
+  src: url(../fonts/angeltears.ttf);
 }
 
 @font-face {
   font-family: time-font;
   src: url(../fonts/Times-New-Roman.ttf);
+}
+
+@font-face {
+  font-family: spec-title-font;
+  src: url(../fonts/greatvibes.ttf);
+}
+
+@font-face {
+  font-family: button-font;
+  src: url(../fonts/Antipasto.ttf);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(../fonts/cafeta.ttf);
 }
 
 .canhcam-testimonials-1 {
@@ -10921,100 +11192,155 @@ header.fixedheader {
   }
 }
 
-.canhcam-testimonials-1 .bg-img {
+.canhcam-testimonials-1 .bg {
   margin-top: -3rem;
-  padding: 0 3rem;
 }
 
 @media (min-width: 768px) {
-  .canhcam-testimonials-1 .bg-img {
-    margin-top: -5rem;
+  .canhcam-testimonials-1 .bg {
+    margin-top: -3rem;
   }
 }
 
-.canhcam-testimonials-1 .bg-img h2 {
+.canhcam-testimonials-1 .row.inside {
+  width: 95%;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 6.5714285714rem;
+}
+
+.canhcam-testimonials-1 .row.inside.head {
+  top: 18%;
+  margin-top: -3rem;
+}
+
+@media (min-width: 768px) {
+  .canhcam-testimonials-1 .row.inside.head {
+    top: 11%;
+  }
+}
+
+.canhcam-testimonials-1 .row.inside.head h2 {
+  font-family: "spec-title-font";
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
-  .canhcam-testimonials-1 .bg-img h2 {
+@media (min-width: 576px) {
+  .canhcam-testimonials-1 .row.inside.head h2 {
     font-size: 2rem;
-    top: -3rem;
   }
 }
 
 @media (min-width: 992px) {
-  .canhcam-testimonials-1 .bg-img h2 {
+  .canhcam-testimonials-1 .row.inside.head h2 {
     font-size: 2rem;
-    top: 0rem;
   }
 }
 
-.canhcam-testimonials-1 .bg-img p {
+.canhcam-testimonials-1 .row.inside.body {
+  top: 20%;
+}
+
+@media (min-width: 768px) {
+  .canhcam-testimonials-1 .row.inside.body {
+    margin-left: .5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .canhcam-testimonials-1 .row.inside.body {
+    top: 29%;
+    margin-left: 1rem;
+  }
+}
+
+.canhcam-testimonials-1 .row.inside.body p {
   font-family: 'time-font';
   color: #afafaf;
-  position: absolute;
-  top: 12%;
-  width: 6.5rem;
-  left: 56%;
-  font-size: 0.5714285714rem;
+  bottom: 2rem;
+  width: 10.3rem;
+  font-size: .8rem;
+  margin-left: .5rem;
+}
+
+@media (min-width: 576px) {
+  .canhcam-testimonials-1 .row.inside.body p {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    width: 15.3rem;
+  }
 }
 
 @media (min-width: 768px) {
-  .canhcam-testimonials-1 .bg-img p {
-    font-size: 1rem;
+  .canhcam-testimonials-1 .row.inside.body p {
+    font-size: 1.2rem;
     width: 18rem;
-    top: 24%;
-    left: 57%;
   }
 }
 
 @media (min-width: 992px) {
-  .canhcam-testimonials-1 .bg-img p {
+  .canhcam-testimonials-1 .row.inside.body p {
     font-size: 1.5rem;
-    width: 18rem;
-    top: 24%;
-    left: 71%;
+    width: 26rem;
   }
 }
 
-.canhcam-testimonials-1 .bg-img button {
-  position: absolute;
-  left: 52%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 70%;
+.canhcam-testimonials-1 .row.inside.but {
+  bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+  .canhcam-testimonials-1 .row.inside.but {
+    bottom: 2rem;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .canhcam-testimonials-1 .row.inside.but {
+    top: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .canhcam-testimonials-1 .row.inside.but {
+    top: 64%;
+    margin-left: 1rem;
+  }
+}
+
+.canhcam-testimonials-1 .row.inside.but button {
+  font-family: "button-font";
   background: #000;
   color: #fff;
   border-radius: 0;
   width: 8rem;
-  height: 1.2rem;
-  font-size: 0.5rem;
+  height: 1.5rem;
+  font-size: .7rem;
   padding: 0;
 }
 
+@media (min-width: 576px) {
+  .canhcam-testimonials-1 .row.inside.but button {
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 15rem;
+  }
+}
+
 @media (min-width: 768px) {
-  .canhcam-testimonials-1 .bg-img button {
-    font-size: 1rem;
-    left: 71%;
-    top: 61%;
+  .canhcam-testimonials-1 .row.inside.but button {
+    font-size: 1.2rem;
     height: 3rem;
     width: 14rem;
   }
 }
 
 @media (min-width: 992px) {
-  .canhcam-testimonials-1 .bg-img button {
-    font-size: 1rem;
-    left: 71%;
-    top: 61%;
+  .canhcam-testimonials-1 .row.inside.but button {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    letter-spacing: 2px;
     height: 3rem;
-    width: 14rem;
+    width: 15rem;
   }
 }
 
@@ -11053,6 +11379,7 @@ header.fixedheader {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 1rem;
+  font-family: "spec-title-font";
 }
 
 @media (min-width: 768px) {
@@ -11066,6 +11393,31 @@ header.fixedheader {
   margin-top: 2rem;
   right: 2rem;
   font-size: 1rem;
+  font-family: "spec-title-font";
+}
+
+@media (min-width: 576px) {
+  .canhcam-testimonials-1 .testimonial-slider .item figcaption h4 {
+    bottom: 3rem;
+    font-size: 1.5rem;
+  }
+  .canhcam-testimonials-1 .testimonial-slider .item figcaption .price {
+    margin-top: 3rem;
+    right: 6rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .canhcam-testimonials-1 .testimonial-slider .item figcaption h4 {
+    bottom: 7rem;
+    font-size: 1.4rem;
+  }
+  .canhcam-testimonials-1 .testimonial-slider .item figcaption .price {
+    margin-top: 3rem;
+    right: 6rem;
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -11155,12 +11507,27 @@ header.fixedheader {
 
 @font-face {
   font-family: head-font;
-  src: url(../fonts/Angeline-Vintage_Demo.ttf);
+  src: url(../fonts/angeltears.ttf);
 }
 
 @font-face {
   font-family: time-font;
   src: url(../fonts/Times-New-Roman.ttf);
+}
+
+@font-face {
+  font-family: spec-title-font;
+  src: url(../fonts/greatvibes.ttf);
+}
+
+@font-face {
+  font-family: button-font;
+  src: url(../fonts/Antipasto.ttf);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(../fonts/cafeta.ttf);
 }
 
 .canhcam-banner-1 .slick-slider {
@@ -11244,6 +11611,12 @@ header.fixedheader {
   text-align: center;
 }
 
+@media (min-width: 576px) {
+  .canhcam-banner-1 .slick-slider .slick-track .item .title {
+    margin: 0 9rem;
+  }
+}
+
 @media (min-width: 768px) {
   .canhcam-banner-1 .slick-slider .slick-track .item .title {
     padding: 0 5rem;
@@ -11251,7 +11624,7 @@ header.fixedheader {
     padding-right: 1rem;
     padding-bottom: 0;
     padding-left: 1rem;
-    margin: 0 15rem;
+    margin: 0 11rem;
   }
 }
 
@@ -11262,17 +11635,34 @@ header.fixedheader {
   }
 }
 
+@media (min-width: 1200px) {
+  .canhcam-banner-1 .slick-slider .slick-track .item .title {
+    margin: 0 25rem;
+  }
+}
+
 .canhcam-banner-1 .slick-slider .slick-track .item .title h1 {
+  font-family: "title-font";
   margin-top: 1rem;
   font-size: 1.5rem;
   color: #000000;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 576px) {
+  .canhcam-banner-1 .slick-slider .slick-track .item .title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+  }
+}
+
 @media (min-width: 768px) {
   .canhcam-banner-1 .slick-slider .slick-track .item .title h1 {
     margin-top: 3rem;
     font-size: 2rem;
+    letter-spacing: 2px;
   }
 }
 
@@ -11280,6 +11670,14 @@ header.fixedheader {
   .canhcam-banner-1 .slick-slider .slick-track .item .title h1 {
     font-size: 3.5rem;
     margin-bottom: 2rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .canhcam-banner-1 .slick-slider .slick-track .item .title h1 {
+    margin-bottom: 4rem;
+    letter-spacing: 4px;
   }
 }
 
@@ -11287,16 +11685,20 @@ header.fixedheader {
   font-family: 'time-font';
   color: #000000;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-  font-size: 1rem;
-  line-height: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 300;
+}
+
+@media (min-width: 576px) {
+  .canhcam-banner-1 .slick-slider .slick-track .item .title p {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .canhcam-banner-1 .slick-slider .slick-track .item .title p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     max-width: 90%;
-    margin: 1rem auto 3rem auto;
   }
 }
 
@@ -11308,6 +11710,14 @@ header.fixedheader {
 
 .canhcam-banner-1 .slick-slider .slick-arrow {
   opacity: 0;
+}
+
+.canhcam-banner-1 .slick-slider .slick-arrow.slick-prev {
+  left: 0;
+}
+
+.canhcam-banner-1 .slick-slider .slick-arrow.slick-next {
+  right: 0;
 }
 
 @media (min-width: 768px) {
@@ -11362,7 +11772,7 @@ header.fixedheader {
 @media (min-width: 768px) {
   .canhcam-banner-1 .slick-slider .slick-dots {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     bottom: auto;
     left: 0;
   }
@@ -11412,12 +11822,27 @@ header.fixedheader {
 
 @font-face {
   font-family: head-font;
-  src: url(../fonts/Angeline-Vintage_Demo.ttf);
+  src: url(../fonts/angeltears.ttf);
 }
 
 @font-face {
   font-family: time-font;
   src: url(../fonts/Times-New-Roman.ttf);
+}
+
+@font-face {
+  font-family: spec-title-font;
+  src: url(../fonts/greatvibes.ttf);
+}
+
+@font-face {
+  font-family: button-font;
+  src: url(../fonts/Antipasto.ttf);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(../fonts/cafeta.ttf);
 }
 
 .canhcam-footer-3 {
@@ -11442,7 +11867,6 @@ header.fixedheader {
 }
 
 .canhcam-footer-3 h4 {
-  text-transform: uppercase;
   color: #ffffff;
   position: relative;
   font-size: 1rem;
@@ -11456,6 +11880,10 @@ header.fixedheader {
   .canhcam-footer-3 h4 {
     margin-bottom: 2.5rem;
   }
+}
+
+.canhcam-footer-3 .spec {
+  font-family: "spec-title-font";
 }
 
 @media (max-width: 991.98px) {
@@ -11511,14 +11939,19 @@ header.fixedheader {
 }
 
 .canhcam-footer-3 .linkfooter .list-group .list-group-item a {
-  color: #d9d9d973;
+  color: white;
   font-size: .9rem;
 }
 
-.canhcam-footer-3 .linkfooter .list-group .list-group-item a:hover {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+@media (min-width: 768px) {
+  .canhcam-footer-3 .linkfooter .list-group .list-group-item a {
+    color: #d9d9d973;
+  }
+  .canhcam-footer-3 .linkfooter .list-group .list-group-item a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
 }
 
 .canhcam-footer-3 .linkfooter .subscribe .input-group2 {
