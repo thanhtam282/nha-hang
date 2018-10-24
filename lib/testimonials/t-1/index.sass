@@ -14,6 +14,8 @@
 			margin-top: -3rem
 	.row.inside
 		width: 95%
+		+media-breakpoint-up(md)
+			width: 100%
 		position: absolute
 		&.head
 			top: 18%
@@ -22,11 +24,11 @@
 				top: 11%
 			h2
 				font-family: "spec-title-font"
-				font-size: 1rem
+				font-size: 1.5rem
 				+media-breakpoint-up(sm)
 					font-size: 2rem
 				+media-breakpoint-up(lg)
-					font-size: 2rem
+					font-size: 3rem
 		&.body
 			top: 20%
 			+media-breakpoint-up(md)
@@ -166,7 +168,7 @@
 					bottom: 2rem
 					left: 50%
 					transform: translateX(-50%)
-					font-size: 1rem
+					font-size: 1.3rem
 					font-family: "spec-title-font"
 					+media-breakpoint-up(md)
 						bottom: 6rem
@@ -174,7 +176,7 @@
 					position: absolute
 					margin-top: 2rem
 					right: 2rem
-					font-size: 1rem
+					font-size: 1.2rem
 					font-family: "spec-title-font"
 					//position: absolute
 				+media-breakpoint-up(sm)
@@ -190,23 +192,26 @@
 				+media-breakpoint-up(md)
 					//max-width: 600px
 					h4
-						bottom: 7rem
+						bottom: 2.5rem
 						font-size: 1.4rem
 					.price
 						margin-top: 3rem
-						right: 6rem
+						right: 3rem
 						font-size: 1.2rem
 						//position: absolute
 				+media-breakpoint-up(lg)
 					max-width: 600px
 					h4
-						bottom: 8rem
-						font-size: 1.7rem
+						bottom: 3rem
+						font-size: 2rem
 					.price
 						margin-top: 4rem
-						right: 5rem
-						font-size: 1.3rem
+						right: 4rem
+						font-size: 1.5rem
 						//position: absolute
+				+media-breakpoint-up(xl)
+					h4
+						bottom: 5rem
 
 	.owl-carousel
 		position: relative

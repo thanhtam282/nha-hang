@@ -19,7 +19,7 @@
 				+media-breakpoint-up(md)
 					min-height: 360px
 				+media-breakpoint-up(lg)
-					min-height: 800px
+					min-height: 600px
 				.title
 					margin: 0 3rem
 					+pad(0 2rem)
@@ -115,9 +115,11 @@
 		// Dots
 		.slick-dots
 			+pos(abs, 1.25rem null auto 0)
+			width: 100%
 			+media-breakpoint-up(md)
 				+pos(abs, 1rem null auto 0)
-			width: 100%
+			+media-breakpoint-up(lg)
+				+pos(abs, 3rem null auto 0)
 			li
 				width: .75rem
 				height: .75rem
