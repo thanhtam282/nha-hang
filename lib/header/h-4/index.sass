@@ -4,6 +4,7 @@
 //////////////////////////////////////
 
 .canhcam-header-4
+	position: absolute !important
 	background-color: rgba(0,0,0,0)
 	
 	//border-bottom: 1px solid darken(color-get($mau,trang),20%)
@@ -21,6 +22,8 @@
 		+pad(.5rem .75rem)
 		&:focus
 			outline: none
+		span
+			color: #fff
 	.navbar-brand
 		+media-breakpoint-down(md)
 			margin-right: auto
@@ -28,9 +31,11 @@
 			max-height: 2rem
 	&.expand
 		.navbar-toggler
-			background: color-get($mau,main)
-			color: color-get($mau,trang)
-			border-color: color-get($mau,main)
+			background: color-get($mau,trang)
+			color: color-get($mau,den)
+			border-color: color-get($mau,trang)
+			span
+				color: black
 	+media-breakpoint-up(xl)
 		.navbar-nav
 			.nav-item

@@ -10459,6 +10459,7 @@ header.fixedheader {
 }
 
 .canhcam-header-4 {
+  position: absolute !important;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -10497,6 +10498,10 @@ header.fixedheader {
   outline: none;
 }
 
+.canhcam-header-4 .navbar-toggler span {
+  color: #fff;
+}
+
 @media (max-width: 991.98px) {
   .canhcam-header-4 .navbar-brand {
     margin-right: auto;
@@ -10508,9 +10513,13 @@ header.fixedheader {
 }
 
 .canhcam-header-4.expand .navbar-toggler {
-  background: #2e3192;
-  color: #ffffff;
-  border-color: #2e3192;
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.canhcam-header-4.expand .navbar-toggler span {
+  color: black;
 }
 
 @media (min-width: 1200px) {
@@ -10691,6 +10700,33 @@ header.fixedheader {
     margin-top: 9rem;
     width: 15.9285714286rem;
     font-size: 1.5rem;
+    -webkit-transition-delay: 0.2s !important;
+    transition-delay: 0.2s !important;
+    overflow: hidden;
+  }
+  .canhcam-boxes-2 .title .btn-lg:after {
+    top: auto;
+    border-radius: 50% 50% 0 0/75% 75% 0 0;
+    background: white;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: height 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+  .canhcam-boxes-2 .title .btn-lg:hover::after {
+    height: 300%;
+    background: white;
+  }
+  .canhcam-boxes-2 .title .btn-lg:hover {
+    color: #000;
+    border: 2px solid #000;
   }
 }
 
@@ -10784,8 +10820,15 @@ header.fixedheader {
   right: 22px;
   width: 0;
   height: 0;
-  border: 6px solid transparent;
+  border: 4px solid transparent;
   border-color: #000 transparent transparent transparent;
+}
+
+@media (min-width: 576px) {
+  .option .select-selected:after {
+    border: 10px solid transparent;
+    border-color: #000 transparent transparent transparent;
+  }
 }
 
 @media (min-width: 768px) {
@@ -10821,8 +10864,14 @@ header.fixedheader {
   left: 0;
   right: 0;
   z-index: 99;
-  height: 7rem;
+  height: 5rem;
   overflow-y: scroll;
+}
+
+@media (min-width: 576px) {
+  .option .select-items {
+    height: 7rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10917,7 +10966,7 @@ header.fixedheader {
   left: 50%;
   -webkit-transform: translateX(-50%) !important;
   transform: translateX(-50%) !important;
-  bottom: 1rem;
+  bottom: 1.5rem;
   background: #000;
   color: #fff;
   border-radius: 0;
@@ -10938,6 +10987,13 @@ header.fixedheader {
   .reser .bg-img button {
     font-size: 1.8rem;
     bottom: 4.5rem;
+    -webkit-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+  }
+  .reser .bg-img button:hover {
+    color: #000;
+    background: #fff;
+    border: 2px solid #000;
   }
 }
 
@@ -11110,8 +11166,9 @@ header.fixedheader {
     font-size: 1rem;
   }
   .reser .intro .second .title .btn:hover {
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
   }
 }
 
@@ -11405,6 +11462,7 @@ header.fixedheader {
 }
 
 .canhcam-testimonials-1 .testimonial-slider .item figcaption h4 {
+  white-space: nowrap;
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -11909,18 +11967,24 @@ header.fixedheader {
 @media (min-width: 768px) {
   .canhcam-footer-3 .row {
     padding: 0 2rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 }
 
 .canhcam-footer-3 h4 {
   color: #ffffff;
   position: relative;
-  font-size: 1rem;
   margin-bottom: 1.5rem;
-  font-family: 'fantasy';
+  font-family: 'button-font';
   letter-spacing: 1px;
   white-space: nowrap;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .canhcam-footer-3 h4 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -11935,12 +11999,13 @@ header.fixedheader {
 
 @media (max-width: 767.98px) {
   .canhcam-footer-3 .spec {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 991.98px) {
   .canhcam-footer-3 .spec {
+    font-size: 1.5rem;
     margin-top: 1rem !important;
   }
 }

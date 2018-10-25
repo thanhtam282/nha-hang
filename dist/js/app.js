@@ -683,6 +683,22 @@ $(document).ready(function () {});
 
 $(window).resize(function () {});
 
+window.onscroll = function () {
+	if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+		//document.getElementById("myBtn").style.display = "block";
+		//closeAllSelect;
+		document.addEventListener("scroll", closeAllSelect);
+	} else {
+		//$("#butbut").hide();
+	}
+};
+
+// $(".bg-img a h2").click(function () {
+// 	$('.reser').animate({
+// 		scrollTop: 0
+// 	}, 700);
+// });
+
 $(function () {
 	$("#datepicker").datepicker();
 });
