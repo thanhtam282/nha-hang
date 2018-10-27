@@ -11420,6 +11420,13 @@ header.fixedheader {
     font-size: 1.2rem;
     height: 3rem;
     width: 14rem;
+    -webkit-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
+  }
+  .canhcam-testimonials-1 .row.inside.but button:hover {
+    background: #ffffff;
+    color: #000;
+    border: 2px solid black;
   }
 }
 
@@ -11951,7 +11958,6 @@ header.fixedheader {
 }
 
 .canhcam-footer-3 {
-  min-height: 400px;
   position: relative;
   z-index: 1;
   color: #807f7f;
